@@ -1,4 +1,4 @@
-/* General Styles */
+/* Styles */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -18,7 +18,7 @@ a {
 
 /* Header Section */
 header {
-    background: #2C3E50; /* Dark professional blue-gray */
+    background: #2C3E50;
     color: white;
     padding: 10px 0;
     position: sticky;
@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #AAB7C4; /* Subtle grayish hover color */
+    color: #AAB7C4;
 }
 
 /* Hero Section */
@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 .cta-button {
     display: inline-block;
-    background: #27AE60; /* Professional green */
+    background: #27AE60;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -113,7 +113,7 @@ nav ul li a:hover {
 #blog {
     text-align: center;
     padding: 50px 20px;
-    background: #ECF0F1; /* Light gray background */
+    background: #ECF0F1;
 }
 
 .blog-grid {
@@ -151,7 +151,7 @@ nav ul li a:hover {
 .blog-post a {
     display: block;
     margin: 10px;
-    color: #2980B9; /* Professional blue */
+    color: #2980B9;
     font-weight: bold;
     text-align: right;
     transition: color 0.3s;
@@ -188,7 +188,7 @@ form textarea {
 form button {
     padding: 10px 20px;
     font-size: 1rem;
-    background: #27AE60; /* Professional green */
+    background: #27AE60;
     color: white;
     border: none;
     border-radius: 5px;
@@ -231,3 +231,27 @@ footer {
 .social-links li a:hover {
     color: #AAB7C4;
 }
+
+/* Making blog images responsive */
+.blog-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* To Center the image */
+    border-radius: 8px; 
+}
+
+/* Style for image captions (fig) */
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 8px;
+    font-style: italic;
+}
+
