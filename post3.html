@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CSS Box Model | AZ Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <nav>
+            <div class="logo">MyBlog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Post Section -->
+    <section id="blog">
+        <div class="blog-post-detail">
+            <h1>How to Build a Blog Website Using HTML, CSS, Host it on GitHub, and Deploy it to Vercel</h1>
+            <figure>
+                <img src="assets/DALL·E 2025-01-04 11.56.36 - A clean and minimalist digital illustration for a blog tutorial titled 'How to Build a Blog Website Using HTML, CSS, and Host it on GitHub and Deploy .webp" alt="Illustration on building a blog website" class="blog-image">
+                <figcaption>Fig: Building and Deploying a Blog Website</figcaption>
+            </figure>
+            <h2>Step 1: Set Up Your Development Environment</h2>
+            <p>Before we start, ensure you have the following tools:</p>
+            <ul>
+                <li><strong>Text Editor:</strong> Use a code editor like <a href="https://visualstudio.com" target="_blank">Visual Studio Code</a>.</li>
+                <li><strong>Git:</strong> Install Git on your computer.</li>
+                <li><strong>GitHub Account:</strong> Create an account at <a href="https://github.com" target="_blank">GitHub</a> if you don’t already have one.</li>
+            </ul>
+            
+            <h2>Step 2: Create Your Blog Website</h2>
+            <h3>1. Structure Your Website with HTML</h3>
+            <p>HTML (HyperText Markup Language) forms the backbone of your blog. Here’s an example of a basic blog structure:</p>
+            <img src="assets/Screenshot 2025-01-04 at 12.24.35 PM.png" alt="CSS Styling Example 1" class="example-image">
+            
+            <h3>2. Style Your Blog with CSS</h3>
+            <p>Create a <code>style.css</code> file to make your blog look appealing. Here’s some basic styling:</p>
+            <img src="assets/Screenshot 2025-01-04 at 12.23.42 PM.png" alt="CSS Styling Example 1" class="example-image">
+            
+            <h2>Step 3: Host Your Blog on GitHub</h2>
+            <h3>1. Create a GitHub Repository</h3>
+            <p>Log in to your GitHub account and follow these steps:</p>
+            <ul>
+                <li>Click the <strong>New Repository</strong> button.</li>
+                <li>Name your repository (e.g., <code>my-blog</code>) and keep it public.</li>
+                <li>Click <strong>Create Repository</strong>.</li>
+            </ul>
+            
+            <h3>2. Upload Your Files</h3>
+            <p>You can upload your files in two ways:</p>
+            <ul>
+                <li><strong>Option 1: Using the Web Interface</strong><br>Click <strong>Add File > Upload Files</strong>. Drag and drop your <code>index.html</code> and <code>style.css</code> files. Click <strong>Commit Changes</strong> to save them.</li>
+                <li><strong>Option 2: Using Git (Command Line)</strong><br>
+                    <code>
+                        git init<br>
+                        git add .<br>
+                        git commit -m "initial commit"<br>
+                        git remote add origin https://github.com/yourusername/my-blog.git<br>
+                        git push -u origin main
+                    </code>
+                </li>
+            </ul>
+            
+            <h2>Step 4: Deploy Your Blog on Vercel</h2>
+            <p>Follow these steps to deploy your blog:</p>
+            <ul>
+                <li>Create a Vercel account if you haven’t.</li>
+                <li>Sign up with your GitHub account.</li>
+                <li>Click <strong>New Project</strong> and connect your GitHub repository.</li>
+                <li>Click <strong>Deploy</strong> and wait for the process to complete.</li>
+                <li>Once deployed, Vercel will provide you with a live URL for your website.</li>
+            </ul>
+            
+            <p>With these steps, you can successfully build, host, and deploy your blog website!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Personal Blog. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/share/1D1AkEgTJx/" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/az_anzol" target="_blank">X</a></li>
+                <li><a href="https://www.instagram.com/ig_anzol/" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
