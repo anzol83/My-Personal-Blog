@@ -255,3 +255,21 @@ figcaption {
     font-style: italic;
 }
 
+/* Post 3 */
+/* Remove bullets from the unordered list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-left: 0;
+}
+.example-image {
+    width: 100%; 
+    max-width: 500px; 
+    margin: 20px 0;
+}
+
+
+
