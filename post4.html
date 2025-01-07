@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Loops and Control Flow in JavaScript | My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">MyBlog</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Post Section -->
+    <section id="blog">
+        <div class="blog-post-detail">
+            <h1>Understanding Loops and Control Flow in JavaScript</h1>
+            <figure>
+                <img src="assets/02-03-20-javascript-loops-all-you-need-to-know-blog.jpg" alt="JavaScript Loops and Control Flow" class="blog-image">
+                <figcaption>Fig: JavaScript Loops and Control Flow</figcaption>
+            </figure>
+
+            <h2>Introduction</h2>
+            <p>Loops in JavaScript are essential constructs that allow developers to repeat a block of code multiple times. This functionality is helpful when dealing with tasks such as iterating over arrays, processing lists of data, or executing code based on conditions. However, controlling the flow of loops is just as important. This is where the <code>break</code> and <code>continue</code> statements come into play. In this blog post, we’ll explore the different types of loops in JavaScript and dive into how the <code>break</code> and <code>continue</code> statements work to manipulate the flow of loops.</p>
+
+            <h2>Types of Loops in JavaScript</h2>
+
+            <h3>1. For Loop</h3>
+            <p>The <code>for</code> loop is one of the most widely used loops. It allows you to execute a block of code a specific number of times. Here's an example:</p>
+            <pre><code>for (let i = 0; i &lt; 5; i++) {
+    console.log(i);
+}</code></pre>
+
+            <h3>2. While Loop</h3>
+            <p>The <code>while</code> loop repeatedly executes a block of code as long as the given condition is <code>true</code>.</p>
+            <pre><code>let i = 0;
+while (i &lt; 5) {
+    console.log(i);
+    i++;
+}</code></pre>
+
+            <h3>3. Do-While Loop</h3>
+            <p>The <code>do-while</code> loop is similar to the <code>while</code> loop, but it guarantees at least one iteration, as the condition is checked after the code block executes.</p>
+            <pre><code>let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i &lt; 5);</code></pre>
+
+            <h3>4. For-In Loop</h3>
+            <p>The <code>for-in</code> loop is used to iterate over the properties of an object.</p>
+            <pre><code>let person = { name: "John", age: 30 };
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}</code></pre>
+
+            <h3>5. For-Of Loop</h3>
+            <p>The <code>for-of</code> loop is used to iterate over iterable objects like arrays and strings.</p>
+            <pre><code>let numbers = [1, 2, 3, 4, 5];
+for (let number of numbers) {
+    console.log(number);
+}</code></pre>
+
+            <h2>The <code>break</code> Statement in Loops</h2>
+            <p>The <code>break</code> statement is used to terminate a loop early. When the loop encounters a <code>break</code>, it immediately stops, regardless of the condition.</p>
+            <pre><code>for (let i = 0; i &lt; 10; i++) {
+    if (i === 5) {
+        break;  // Exit the loop when i equals 5
+    }
+    console.log(i);
+}</code></pre>
+            <p>In this example, the loop breaks when <code>i</code> equals 5, and the remaining iterations are skipped.</p>
+
+            <h2>The <code>continue</code> Statement in Loops</h2>
+            <p>The <code>continue</code> statement is used to skip the current iteration and continue with the next iteration of the loop. Unlike <code>break</code>, which completely exits the loop, <code>continue</code> allows the loop to keep running but skips the remaining code in the current iteration.</p>
+            <pre><code>for (let i = 0; i &lt; 5; i++) {
+    if (i === 2) {
+        continue;  // Skip the iteration when
+        i equals 2
+    }
+    console.log(i);
+}</code></pre>
+            <p>Here, when <code>i</code> equals 2, the <code>continue</code> statement causes the loop to skip that iteration and move to the next.</p>
+
+            <h2>When to Use <code>break</code> and <code>continue</code></h2>
+            <ul>
+                <li><strong>Use <code>break</code>:</strong> When you want to stop the loop early. This is especially useful when you’ve found the item you’re looking for, or a certain condition is met, and you don’t need to continue the loop any further.</li>
+                <li><strong>Use <code>continue</code>:</strong> When you want to skip a particular iteration of the loop but still need to continue iterating over the remaining items.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Loops in JavaScript are a powerful tool for executing repetitive tasks. Understanding how and when to use the <code>break</code> and <code>continue</code> statements will give you greater control over the flow of your loops. Whether you're optimizing your code to stop early with <code>break</code> or skipping unnecessary iterations with <code>continue</code>, mastering these loop control structures will improve your efficiency and the readability of your code.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 My Personal Blog. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
